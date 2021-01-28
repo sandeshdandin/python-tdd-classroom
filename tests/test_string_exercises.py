@@ -34,18 +34,18 @@ class TestExercise(unittest.TestCase):
     def test_find_longest_word(self):
         text = "Three tomatoes are walking down the street"
         expected = "tomatoes"
-        actual = self.string_exercise.find_longest_word(text)
+        actual = self.string_exercise.find_longest_word(text)        
         self.assertEqual(expected, actual)
 
         text = "foo foo1 foo2 foo3"
         expected = "foo1"
-        actual = self.string_exercise.find_longest_word(text)
+        actual = self.string_exercise.find_longest_word(text)        
         self.assertEqual(expected, actual)
 
     def test_get_word_lengths(self):
         text = "Three tomatoes are walking down the street"
         expected = [5, 8, 3, 7, 4, 3, 6]
-        actual = self.string_exercise.get_word_lengths(text)
+        actual = self.string_exercise.get_word_lengths(text)        
         self.assertEqual(expected, actual) 
 
     def tearDown(self):
